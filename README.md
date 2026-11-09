@@ -95,3 +95,21 @@ src/app.ts         HTTP routes
 src/main.ts        server entry point
 src/*.test.ts      tests
 ```
+
+## Claude prompts
+
+Implement a 4x4 Tic-Tac-Toe/Connect Four solver. The program should take in a representation of a 4x4 board, and tell you the winner if any.
+Victory is determined by one of five conditions:
+Vertical, Horizontal, Diagonal, All Four Corner, 2x2 box
+
+Implement the nodejs typescript application with functions such as checkWinner, anyMovesLeft, isGameOver and more.
+The requirements follows:
+1. update the functionality in such way that if first winning condition is met then the winner is declared and no further inputs are allowed.
+2. The first winning condition check should be minimum after 7th move. There is no need to check winning condition before 7th move.
+3. Consider total 9 possibilities of 2x2 box for win condition
+Add test cases for all the functions to achieve at least 80% of the code coverage.
+Ask me questions about any choices or deciding factors.
+How should moves work?
+Alternating turns, X always starts
+When does the first win check run?
+On the 7th move itself (skip moves 1-6)
